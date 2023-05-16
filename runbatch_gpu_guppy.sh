@@ -20,20 +20,20 @@ fast5_input=$1
 
 # use standard guppy if desired
 guppy_basecaller=guppy_basecaller
-#guppy_basecaller="singularity exec /mnt/ngsnfs/tools/guppy/guppy601.sif guppy_basecaller"
+#guppy_basecaller="singularity exec config=/path/to/your/directory/guppy601.sif guppy_basecaller"
 
 
 
 # rerio super accuracy
-config=/mnt/ngsnfs/tools/guppy/rerio/basecall_models/res_dna_r9.4.1_e8.1_sup_v033.cfg
-model=/mnt/ngsnfs/tools/guppy/rerio/basecall_models/res_dna_r9.4.1_e8.1_sup_v033.jsn
+config=config=/path/to/your/directory/res_dna_r9.4.1_e8.1_sup_v033.cfg
+model=config=/path/to/your/directory/res_dna_r9.4.1_e8.1_sup_v033.jsn
 
 
 # bonito rerio high accuracy models and configs
 # See bottom for all models
-#config=/mnt/ngsnfs/tools/guppy/rerio/basecall_models/res_dna_r941_min_dUhac.cfg
-#config=/mnt/ngsnfs/tools/guppy/rerio/basecall_models/res_dna_r9.4.1_e8.1_sup_v033
-#model=/mnt/ngsnfs/tools/guppy/rerio/basecall_models/res_dna_r941_min_dUhac.jsn
+#config=config=/path/to/your/directory/res_dna_r941_min_dUhac.cfg
+#config=config=/path/to/your/directory/res_dna_r9.4.1_e8.1_sup_v033
+#model=config=/path/to/your/directory/res_dna_r941_min_dUhac.jsn
 
 
 echo "Starting guppy on dir: " $fast5_input
